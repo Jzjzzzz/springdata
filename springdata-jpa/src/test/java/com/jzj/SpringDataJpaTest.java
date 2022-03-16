@@ -45,12 +45,12 @@ public class SpringDataJpaTest {
     @Test
     public void testBat(){
         Customer customer = new Customer();
-        customer.setCustName("ccc");
+        customer.setCustName("刘德华");
         Customer customer2 = new Customer();
-        customer.setCustName("ggg");
+        customer.setCustName("梁朝伟");
         ArrayList<Customer> customers = new ArrayList<>();
         customers.add(customer);
-        customers.add(customer);
+        customers.add(customer2);
         customerRepository.saveAll(customers);
     }
 
